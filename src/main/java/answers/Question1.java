@@ -3,6 +3,11 @@ package answers;
 public class Question1 {
 	private static int[][] answer_matrix;
 	private static int max = 0;
+	/*
+	public static void main(String[] args) {
+		System.out.println(bestMergedPortfolio(new int[] {9,7,12,2}  ));
+	}
+	*/
 	public static int bestMergedPortfolio(int[] portfolios) {
 		answer_matrix = new int[portfolios.length][portfolios.length];
 		for(int i =0;i<portfolios.length;i++) {

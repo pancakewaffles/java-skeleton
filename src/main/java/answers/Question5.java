@@ -7,7 +7,11 @@ import java.util.Set;
 
 public class Question5 {
 	private static Set<Integer> values;
-
+	/*
+	public static void main(String[] args) {
+		System.out.println(shareExchange(new int[] {3,4} , 6  ));
+	}
+	*/
 	public static int shareExchange(int[] allowedAllocations, int totalValue) {
 		values = new HashSet<Integer>();
 		for(int i : allowedAllocations) {
@@ -30,6 +34,9 @@ public class Question5 {
 		int min = Integer.MAX_VALUE;
 		for(int i : values) {
 			min = Math.min(min, f(totalValue-i));
+		}
+		if(min == Integer.MAX_VALUE) {
+			min = Integer.MAX_VALUE-1;
 		}
 		return 1 + min;
 	}

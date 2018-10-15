@@ -4,9 +4,11 @@ import java.util.PriorityQueue;
 
 public class Question6 {
 	private static Node[] vertices;
+	/*
 	public static void main(String[] args) {
 		System.out.println(shortestServerRoute(3,1, new int[][] { new int[] {0,7,4} , new int[] {7,0,2} , new int[] {4,2,0} } ));
 	}
+	*/
 	public static int shortestServerRoute(int numServers, int targetServer, int[][] times) {
 		// TODO Auto-generated method stub
 		vertices = new Node[numServers];
