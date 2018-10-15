@@ -23,7 +23,6 @@ public class Question6 {
 		
 		while(!toexplore.isEmpty()) {
 			Node v = toexplore.poll();
-			System.out.println("removed server: "+ v.index);
 			for(int i = 0;i<numServers;i++) {
 				if(v.index != i && times[v.index][i] >= 0) {
 					vertices[i].distance = Math.min(v.distance + times[v.index][i], vertices[i].distance);
